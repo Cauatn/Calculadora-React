@@ -1,8 +1,13 @@
 import Teclado from "../Teclado";
+import Display from "../TelaExibicao";
 
 function Calculadora() {
     return (
-        <Teclado/>
+        <div>
+            <Display/>
+            <Teclado/>
+        </div>
+        
     )
 }
 

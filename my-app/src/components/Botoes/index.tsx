@@ -37,15 +37,33 @@ const extra = ['C', '+/-', '%'];
 export default function BotaoContainer({tipo} : Props) {
 
     const DigitosMap = digitos.map((digito, key) => {
-        return <Button tipo={'primary'} key={key}> {digito} </Button>
+        return <Button 
+                    tipo={'primary'}
+                    key={key}
+                    onClick={() => {}}
+                    >
+                {digito}
+                </Button>
     })
 
     const OperadoresMap = operadores.map((operador, key) => {
-        return <Button tipo={'secundary'} key={key}> {operador} </Button>
+        return <Button
+                    tipo={'secundary'}
+                    key={key}
+                    onClick={() => {}}
+                >
+                {operador}
+                </Button>
     })
 
     const ExtraMap = extra.map((extra, key) => {
-        return <Button tipo={'terciary'} key={key}> {extra} </Button>
+        return <Button
+                    tipo={'terciary'}
+                    key={key}
+                    onClick={() => {}}
+                > 
+                {extra} 
+                </Button>
     })
 
     function tipoBotao() {
