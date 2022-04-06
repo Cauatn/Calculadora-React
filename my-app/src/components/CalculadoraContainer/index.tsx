@@ -7,6 +7,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 460px;
+    margin: 40px auto;
 `
 
 const Titulo = styled.h1 `
