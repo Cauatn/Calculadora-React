@@ -1,13 +1,12 @@
 import styled from 'styled-components'
-import Calculadora from '../Calculadora'
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 460px;
-    margin: 40px auto;
+    width: 340px;
+    height: 540px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 `
 
 const Titulo = styled.h1 `
@@ -23,9 +22,6 @@ const Texto = styled.p `
 export default function CalculadoraContainer() {
     return(
         <Container>
-            <Titulo>Calculadora em React</Titulo>
-            <Texto>Calculadora simples em react, para aprender Hooks</Texto>
-            <Calculadora />
         </Container>
     )
 }
