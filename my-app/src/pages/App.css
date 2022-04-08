@@ -8,4 +8,5 @@
 
 .App {
     margin: 25px 50px;
+    display: flex;
 }
